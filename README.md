@@ -248,9 +248,9 @@ This project is licensed under the **MIT License** — see the [LICENSE](./LICEN
 
 ## 👤 Author
 
-**Lucky**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+**Sudheer**
+- GitHub: https://github.com/Sudheer-cpu93
+- LinkedIn: https://www.linkedin.com/in/sudheer993/
 
 ---
 
