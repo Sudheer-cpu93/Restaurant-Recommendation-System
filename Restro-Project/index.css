@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f172a;
+  --card: #1e293b;
+  --card-border: #334155;
+  --primary: #f97316;
+  --accent: #22d3ee;
+  --success: #22c55e;
+  --warning: #eab308;
+  --danger: #ef4444;
+  --text-primary: #f8fafc;
+  --text-muted: #94a3b8;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  * {
+    @apply border-slate-700;
+  }
+}
+
+/* Custom Utilities */
+.glass-effect {
+  @apply bg-slate-800/50 backdrop-blur-md border border-slate-700;
+}
+
+.card-gradient {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+.text-orange { color: var(--primary); }
+.bg-orange { background-color: var(--primary); }
+.border-orange { border-color: var(--primary); }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
